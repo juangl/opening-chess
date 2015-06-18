@@ -1,0 +1,8 @@
+#live-match-table tbody tr{
+  cursor: pointer;
+  
+  &:hover {
+    background: $gray-lighter;
+    color: #000;
+  }
+}

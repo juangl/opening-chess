@@ -1,0 +1,56 @@
+<form class="form-horizontal" ng-submit="createMatch()">
+  <div class="form-group">
+    <div class="col-sm-12">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="match.limited"> Time limited
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group" ng-show="match.limited">
+    <label class="col-sm-3 control-label col-sm-offset-1">Time limit (mins)</label>
+    <div class="col-sm-8">    
+      <div class="input-group">
+        <input ng-model="match.limit" ng-change="report()"  class="form-control" type="range" min="1" max="30" step="1" aria-describedby="clock-addon" /> 
+        <span id="clock-addon" class="input-group-addon" ng-bind="match.limit"></span>
+      </div>
+    </div>
+  </div>
+  <div ng-show="match.limited">
+    <div class="form-group">
+      <div class="col-sm-12">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="match.increments"> Timer increment
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group" ng-show="match.increments">
+      <label class="col-sm-4 control-label col-sm-offset-1">Time increment (secs)</label>
+      <div class="col-sm-7">
+        <div class="input-group">
+          <input ng-model="match.increment" class="form-control" type="range" min="1" max="60" step="1" aria-describedby="clock-addon" /> 
+          <span id="clock-addon" class="input-group-addon" ng-bind="match.increment"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="form-group">
+    <div class="col-sm-12">
+      <div class="checkbox">
+        <label>
+          <input ng-model="match.iPrivate" type="checkbox"> Private
+        </label>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="form-group">
+    <div class="col-sm-12">
+    <button type="submit" class="btn btn-success btn-lg btn-block">Let's play!</button>
+    </div>
+  </div> 
+</form>

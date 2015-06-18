@@ -1,0 +1,32 @@
+#choose-color {
+
+}
+
+#choose-color .thumbnail .caption {
+   text-align: center;
+}
+
+#choose-color .thumbnail.white {
+  background: $gray-dark;
+}
+
+#choose-color .thumbnail.white .caption {
+  font-size: 16px;
+  color: $gray-lighter;
+}
+
+#choose-color .thumbnail:hover {
+  background: $gray-lighter;
+}
+
+#choose-color .thumbnail.white:hover .caption {
+  color: $gray;
+}
+
+.copy-matchid {
+  text-align: center;
+}
+
+.copy-matchid {
+  margin-bottom: 10px;
+}

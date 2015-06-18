@@ -1,0 +1,29 @@
+var Chess = require('chessjs');
+
+module.exports = function(matchesData) {
+
+  return function(socket, next) {
+    var matchID = socket.request.match_id;
+
+    if (matchesData[matchID] === undefined) {
+      Match.findOne({_id: matchID}, function(err, data) {
+        if (err) {
+          next(new Error('Error unexpected.'));
+        } else if (data === null) {
+          next(new Error('match no found.'));
+        } else if (data.s !== 0) {
+          next(new Error('match is not online.'));        
+        } else {
+          socket.matchID = matchID;
+          socket.join(matchID);
+          matchesData[matchID] = {};
+          matchesData[matchID].data = data;
+          matchesData[matchID].chess = new Chess();
+          next();
+        }
+      });
+    } else {
+      next();
+    }
+  }
+}

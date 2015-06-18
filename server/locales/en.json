@@ -1,0 +1,15 @@
+{
+  "TITLE": {
+    "main" : "We love to think",
+    "404_error" : "404 Error",
+    "admin" : "Administration",
+
+    "match" : "Live {0} vs {1}",
+    
+    "login": "Sign in",
+    "signup": "Sign up",
+    "settings": "Settings",
+    "profile": "Profile of {0}"
+  }
+}
+

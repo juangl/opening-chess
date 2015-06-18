@@ -1,0 +1,41 @@
+.cg-board-wrap svg {
+  overflow: hidden;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.pirouetti .cg-piece {
+  width: 110%;
+  height: 110%;
+  bottom:0;
+  left: -5%;
+}
+
+.cg-board-wrap svg * {
+  transition: 0.3s;
+}
+
+.chessboard {
+  text-align: center;
+  border-right: 1px dashed #CCC;
+}
+
+.chessboard .chessground {
+  background: url('/images/bgboard.png') repeat;
+  background-size: 25%;
+  width: 500px;
+  height: 500px;
+}
+
+.chessboard section {
+  display: inline-block;
+  margin: 0 5px 20px 0;
+  background: #404040;
+  padding: 5px;
+  border-radius: 2px;
+}

@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-2 text-center">
+    <a class="btn btn-default btn-lg btn-block" href="#" role="button" ng-click="reload()">Refresh list</a>
+  </div>
+  <div class="col-md-10">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Live matches <i ng-show="loading" class="icon ion-loading-c"></i></h3>
+      </div>
+      <table class="table" id="live-match-table">
+        <thead>
+          <tr>
+            <th>White player</th>
+            <th>Black player</th>
+            <th>Time limit (minutes)</th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="match in liveMatches">
+          <tr ng-click="goToMatch(match._id)">
+            <td>{{match.plys.w.un || '-'}}</td>
+            <td>{{match.plys.b.un || '-'}}</td>
+            <td>{{match.ck ? match.ck.tl : 'unlimited'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+

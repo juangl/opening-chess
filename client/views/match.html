@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-lg-8 chessboard">
+    <section class="">
+    <div class="chessground normal pirouetti coordinates" id="main-board">
+    </div>
+    </section>
+  </div>
+  <div class="col-lg-4">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="panel panel-default">
+          <div class="panel-heading">History</div>
+          <div class="panel-body">
+            <span ng-repeat="move in matchState.data.h">
+              <span ng-if="$even">
+                {{ $index / 2  + 1}}.
+              </span> 
+              <span class="label label-default">{{ move }}</span>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
