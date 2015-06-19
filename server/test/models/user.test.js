@@ -1,8 +1,8 @@
 'use strict';
-
+var mongoose = require('mongoose');
 var should = require('should');
 var app = require('../../app');
-var User = require('./user.model');
+var User = mongoose.model('User');
 
 var user = new User({
   provider: 'local',
