@@ -1,6 +1,8 @@
 # Opening
 
 [![Build Status master](https://secure.travis-ci.org/juangl/opening-chess.svg)](http://travis-ci.org/juangl/opening-chess)
+[![Dependency Status](https://david-dm.org/juangl/opening-chess.svg)](https://david-dm.org/juangl/opening-chess)
+[![devDependency Status](https://david-dm.org/juangl/opening-chess/dev-status.svg)](https://david-dm.org/juangl/opening-chess#info=devDependencies)
 
 > An open-source platform to play chess with people around the world.
 
