@@ -53,7 +53,7 @@ module.exports = function(app, config) {
     secret: config.secrets.session,
     resave: true,
     saveUninitialized: true,
-    store: new mongoStore({ mongoose_connection: mongoose.connection })
+    store: new mongoStore({ mongooseConnection: mongoose.connection })
   }));
   
   if ('production' === env) {
