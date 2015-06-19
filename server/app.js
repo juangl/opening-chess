@@ -9,7 +9,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var express = require('express');
 var mongoose = require('mongoose');
-var glob = glob = require('glob');
+var glob = require('glob');
 var config = require('./config/environment');
 
 // Connect to database

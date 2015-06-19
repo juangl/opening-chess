@@ -1,8 +1,6 @@
 # Opening
 
 [![Build Status master](https://secure.travis-ci.org/juangl/opening-chess.svg)](http://travis-ci.org/juangl/opening-chess)
-[![Dependency Status](https://david-dm.org/juangl/opening-chess.svg)](https://david-dm.org/juangl/opening-chess)
-[![devDependency Status](https://david-dm.org/juangl/opening-chess/dev-status.svg)](https://david-dm.org/juangl/opening-chess#info=devDependencies)
 [![Dependency Status](https://gemnasium.com/juangl/opening-chess.png)](https://gemnasium.com/juangl/opening-chess)
 [![Code Climate](https://codeclimate.com/repos/5584353ee30ba00e550030e1/badges/4c5d9a30194f96131915/gpa.svg)](https://codeclimate.com/repos/5584353ee30ba00e550030e1/feed)
 
