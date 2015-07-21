@@ -3,6 +3,7 @@
 [![Build Status master](https://secure.travis-ci.org/juangl/opening-chess.svg)](http://travis-ci.org/juangl/opening-chess)
 [![Dependency Status](https://gemnasium.com/juangl/opening-chess.png)](https://gemnasium.com/juangl/opening-chess)
 [![Code Climate](https://codeclimate.com/repos/5584353ee30ba00e550030e1/badges/4c5d9a30194f96131915/gpa.svg)](https://codeclimate.com/repos/5584353ee30ba00e550030e1/feed)
+[![Coverage Status](https://coveralls.io/repos/juangl/opening-chess/badge.svg?branch=master&service=github)](https://coveralls.io/github/juangl/opening-chess?branch=master)
 
 
 > An open-source platform to play chess with people around the world.
